@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+$primaryFont: "Roboto", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
+$primaryColor: #49A6E9;
+$secondaryColor:black;
+$mainBgColor:#f0fff0;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   // color:white;
+   // border: 2px solid yellow;
+}
+
+.main-container-header{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
+    background-color: white;
+    .header{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        height: 50px;
+       // background-color: rgba(202, 184, 156, 0.459);
+        //border: 2px solid darkorchid;
+
+
+        h4{
+            display: block;
+            font-family: $primaryFont;
+            letter-spacing: 0.1em;
+            color: $primaryColor;
+        }
+
+        & li{
+            list-style-type: none;
+            grid: 1;
+            font-family: $secondaryFont;
+            letter-spacing: .092em;
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+            
+            & ul{
+                flex:1;
+            // border: 1px solid red;
+                width: 100%;
+                margin: 5px;
+            }
+            
+            & a{
+                text-decoration: none;
+            
+            }
+            a:hover{
+                color: $primaryColor;
+            }
+            a:after{
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+
+
+main{
+    height: calc(100vh - 50px);
+   // height: 100%;
+    //background-color:$mainBgColor;
+    display: grid;
+    place-items: center;
+    
+    .txt-container{
+        display: block;
+        //border: 2px solid tomato;
+        text-align: center;
+        font-family: $primaryFont;
+
+         h2{
+            color:white;
+            width: 100%;
+            font-size: 2.5rem;
+            line-height: 1;
+            letter-spacing: 1.6;
+            font-weight: 700;
+            background-color: black;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 0 0 1em 0;
+
+            & .txt-color{
+                color: $primaryColor;
+                text-transform:capitalize;
+            };
+
+           
+        }
+
+        .btn{
+            font-family: $primaryFont;
+            font-size: 16px;
+            letter-spacing: 1.6px;
+            padding: 12px 20px;
+            font-weight: 700;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: all .5s linear;
+
+            &:hover{
+               
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+}

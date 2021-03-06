@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container-header {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.main-container-header .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  height: 50px;
+}
+
+.main-container-header .header h4 {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+  color: #49A6E9;
+}
+
+.main-container-header .header li {
+  list-style-type: none;
+  grid: 1;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .092em;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container-header .header li ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 5px;
+}
+
+.main-container-header .header li a {
+  text-decoration: none;
+}
+
+.main-container-header .header li a:hover {
+  color: #49A6E9;
+}
+
+.main-container-header .header li a:after {
+  color: black;
+}
+
+main {
+  height: calc(100vh - 50px);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .txt-container {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+main .txt-container h2 {
+  color: white;
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 1.6;
+  font-weight: 700;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 0 1em 0;
+}
+
+main .txt-container h2 .txt-color {
+  color: #49A6E9;
+  text-transform: capitalize;
+}
+
+main .txt-container .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  padding: 12px 20px;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+main .txt-container .btn:hover {
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */
